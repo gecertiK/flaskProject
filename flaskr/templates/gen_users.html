@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Users</title>
+</head>
+<body>
+    <ol>
+    {% for lines in range(count) %}
+        <li>{{ fake.name() }} {{ fake.email() }}</li>
+        {% endfor %}
+    </ol>
+    <a href="/">Back</a>
+</body>
+</html>
