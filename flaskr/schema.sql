@@ -3,5 +3,6 @@ CREATE TABLE IF NOT EXISTS tracks (
   title TEXT UNIQUE NOT NULL,
   artist TEXT UNIQUE NOT NULL,
   genre TEXT NOT NULL,
-  length INTEGER NOT NULL
+  seconds INTEGER NOT NULL
 );
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Astronauts In Space</title>
+</head>
+<body>
+    <h1>Astronauts</h1>
+    <h2>There are {{response['number']}} astronauts in space</h2>
+    <p>Astronauts:</p>
+    <ol>
+    {% for astronaut in response['people'] %}
+            <li>{{astronaut['name']}}</li>
+        {% endfor %}
+    </ol>
+    <a href="/">Back</a>
+</body>
+</html>
